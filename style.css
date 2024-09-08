@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+body {
+    background-color: #2556a4(215, 207, 207);
+    opacity: 5; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+.rubiks-cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out; 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 55px; 
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.rubiks-cube-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px; 
+    margin-right: 50px; 
+}
+
+.rubiks-cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.9;
+    border: 2px solid #111;
+}
+
+.front { transform: translateZ(75px); background-color: red; }
+.back { transform: rotateY(180deg) translateZ(75px); background-color: orange; }
+.left { transform: rotateY(-90deg) translateZ(75px); background-color: blue; }
+.right { transform: rotateY(90deg) translateZ(75px); background-color: green; }
+.top { transform: rotateX(90deg) translateZ(75px); background-color: white; }
+.bottom { transform: rotateX(-90deg) translateZ(75px); background-color: yellow; }
+
+.rotate-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.rotate-button:hover {
+    background-color: #45a049;
+}
+
+.score-table {
+    margin-left: 50px;
+}
+
+.score-table table {
+    border-collapse: collapse;
+    width: 200px;
+}
+
+.score-table th, .score-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.score-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.score-table h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#current-player {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

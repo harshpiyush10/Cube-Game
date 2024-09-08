@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik's Cube Game - Two Players</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Heading -->
+        <h1 class="heading">CUBE GAME - TWO PLAYERS</h1>
+
+        <!-- Main Content: Cubes and Score Table -->
+        <div class="main-content">
+            <!-- Rubik's Cube Container -->
+            <div class="rubiks-cube-container">
+                <!-- Left Cube -->
+                <div class="rubiks-cube left-cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+
+                <!-- Right Cube -->
+                <div class="rubiks-cube right-cube">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face left"></div>
+                    <div class="face right"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+            </div>
+
+            <!-- Score Table -->
+            <div class="score-table">
+                <h2>Scoreboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PLAYERS</th>
+                            <th>SCOREBOARD</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Player 1</td>
+                            <td id="player1-score">0</td>
+                        </tr>
+                        <tr>
+                            <td>Player 2</td>
+                            <td id="player2-score">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Display the current player -->
+                <h3 id="current-player">Current Player: Player 1</h3>
+            </div>
+        </div>
+
+        <!-- Button to Rotate the Cubes -->
+        <button class="rotate-button">Rotate Cubes</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
