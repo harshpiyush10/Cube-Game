@@ -18,7 +18,21 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
-  
+  .instructions-box {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-right: 20px;
+    float: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.main-content {
+    display: flex;
+    align-items: flex-start;
+}
 
 .rubiks-cube {
     width: 150px;
